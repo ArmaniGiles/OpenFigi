@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from .models import Cusip
-from .serializers import CusipSerializers
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.renderers import TemplateHTMLRenderer
@@ -17,7 +16,7 @@ class CusipCode(APIView):
 
         try:
             queryset = Cusip.objects.all()
-            serializer = CusipSerializers(data=queryset)
+            print('queryset : ',queryset)
         except AttributeError:
             queryset = {}
         return Response({'openfigi': queryset})
