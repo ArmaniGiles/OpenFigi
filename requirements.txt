@@ -8,7 +8,7 @@ django-widget-tweaks==1.4.5
 djangorestframework==3.11.0
 get==2019.4.13
 idna==2.8
-numpy==1.17.4
+numpy==1.22.0
 pandas==0.25.3
 post==2019.4.13
 pprint==0.1
